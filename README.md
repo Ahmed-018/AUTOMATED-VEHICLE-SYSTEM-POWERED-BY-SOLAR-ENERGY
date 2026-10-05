@@ -11,6 +11,14 @@ A low-speed electric vehicle for the KAU campus that drives itself to a destinat
 
 ![The prototype](https://ahmed-018.github.io/assets/img/vehicle-hero.jpg)
 
+## 🎥 Project video
+
+
+
+https://github.com/user-attachments/assets/7e411284-bfc0-4028-af13-32fa89631e86
+
+
+
 ---
 
 ## How it works
@@ -30,13 +38,19 @@ The vehicle runs **ROS2 Humble** on a laptop. The laptop reads the **2D LiDAR** 
 
 Before driving the real vehicle, the full ROS2 stack was tested in **Gazebo**: a virtual model of the car with a simulated LiDAR (blue rays) driving through a test track with obstacles.
 
-![Gazebo simulation](https://ahmed-018.github.io/assets/img/gazebo-sim.gif)
+
+
+https://github.com/user-attachments/assets/aba1d662-1a3b-4264-9677-e8818d9f695c
+
+
 
 On the saved map, **Nav2** plans a path (green line) to the selected goal and drives the vehicle there, while **AMCL** tracks its position. The shaded area around the vehicle is the local costmap built from the LiDAR.
 
-![Nav2 navigation in RViz2](https://ahmed-018.github.io/assets/img/rviz-nav2.gif)
 
-🎥 Higher-quality videos: [project page](https://ahmed-018.github.io/solar-vehicle.html)
+
+https://github.com/user-attachments/assets/5ed7c7b6-5a16-4d9d-87fc-713e6039128c
+
+
 
 ## Hardware
 
@@ -80,3 +94,6 @@ On the saved map, **Nav2** plans a path (green line) to the selected goal and dr
 - Replace the laptop with an embedded computer (e.g. Jetson Orin Nano)
 - 3D LiDAR, IMU and depth camera for outdoor navigation
 - Better obstacle classification with a trained deep learning model
+
+
+
