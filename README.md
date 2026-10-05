@@ -26,6 +26,18 @@ The vehicle runs **ROS2 Humble** on a laptop. The laptop reads the **2D LiDAR** 
 | **Movement** | `ArduinoBridge.py` turns `/cmd_vel` into serial commands → Arduino → servo + motors |
 | **Safety stop** | `camera_processor` (YOLO human detection) publishes `/camera_stop_signal` to stop the vehicle |
 
+## Simulation and navigation
+
+Before driving the real vehicle, the full ROS2 stack was tested in **Gazebo**: a virtual model of the car with a simulated LiDAR (blue rays) driving through a test track with obstacles.
+
+![Gazebo simulation](https://ahmed-018.github.io/assets/img/gazebo-sim.gif)
+
+On the saved map, **Nav2** plans a path (green line) to the selected goal and drives the vehicle there, while **AMCL** tracks its position. The shaded area around the vehicle is the local costmap built from the LiDAR.
+
+![Nav2 navigation in RViz2](https://ahmed-018.github.io/assets/img/rviz-nav2.gif)
+
+🎥 Higher-quality videos: [project page](https://ahmed-018.github.io/solar-vehicle.html)
+
 ## Hardware
 
 - Laptop (Intel Core i7) running ROS2 Humble
